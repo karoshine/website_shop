@@ -1,0 +1,152 @@
+{
+  "users": [
+    {
+      "username": "pati",
+      "password": "pati",
+      "role": "user",
+      "cart": []
+    },
+    {
+      "username": "carottka",
+      "password": "12345",
+      "role": "user",
+      "cart": []
+    },
+    {
+      "username": "admin",
+      "password": "12345",
+      "role": "admin",
+      "cart": []
+    },
+    {
+      "username": "janek",
+      "password": "12345",
+      "role": "user",
+      "cart": []
+    },
+    {
+      "username": "lul",
+      "password": "12345",
+      "role": "user",
+      "cart": []
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1768392297758,
+      "productId": 2,
+      "text": "jolo",
+      "rating": 5,
+      "username": "admin"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1768400530360,
+      "date": "2026-01-14T14:22:10.360Z",
+      "username": "carottka",
+      "items": [
+        {
+          "id": 5,
+          "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+          "price": 695,
+          "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+          "category": "jewelery",
+          "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_t.png",
+          "rating": {
+            "rate": 4.6,
+            "count": 400
+          },
+          "qty": 5
+        },
+        {
+          "id": 6,
+          "title": "Solid Gold Petite Micropave ",
+          "price": 168,
+          "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+          "category": "jewelery",
+          "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_t.png",
+          "rating": {
+            "rate": 3.9,
+            "count": 70
+          },
+          "qty": 1
+        },
+        {
+          "id": 7,
+          "title": "White Gold Plated Princess",
+          "price": 9.99,
+          "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+          "category": "jewelery",
+          "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png",
+          "rating": {
+            "rate": 3,
+            "count": 400
+          },
+          "qty": 1
+        },
+        {
+          "id": 2,
+          "title": "Mens Casual Premium Slim Fit T-Shirts ",
+          "price": 22.3,
+          "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+          "category": "men's clothing",
+          "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+          "rating": {
+            "rate": 4.1,
+            "count": 259
+          },
+          "qty": 2
+        }
+      ],
+      "total": 3697.5899999999997
+    },
+    {
+      "id": 1768400562450,
+      "date": "2026-01-14T14:22:42.450Z",
+      "username": "pati",
+      "items": [
+        {
+          "id": 2,
+          "title": "Mens Casual Premium Slim Fit T-Shirts ",
+          "price": 22.3,
+          "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+          "category": "men's clothing",
+          "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+          "rating": {
+            "rate": 4.1,
+            "count": 259
+          },
+          "qty": 1
+        },
+        {
+          "id": 1,
+          "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "price": 109.95,
+          "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+          "category": "men's clothing",
+          "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+          "rating": {
+            "rate": 3.9,
+            "count": 120
+          },
+          "qty": 2
+        },
+        {
+          "id": 7,
+          "title": "White Gold Plated Princess",
+          "price": 9.99,
+          "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+          "category": "jewelery",
+          "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_t.png",
+          "rating": {
+            "rate": 3,
+            "count": 400
+          },
+          "qty": 1
+        }
+      ],
+      "total": 252.19000000000003
+    }
+  ]
+}
