@@ -1,4 +1,4 @@
-# 🛒 ALL IN STORE - E-commerce Project
+# 🛒 ALL IN STORE 
 
 Kompletna platforma e-commerce zrealizowana w architekturze Client-Server. Projekt spełnia wszystkie wymagania zaliczeniowe, w tym autoryzację JWT z Refresh Tokenem, system ról (Admin/User), pełną historię zamówień oraz persystencję danych w pliku JSON.
 
