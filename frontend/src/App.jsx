@@ -51,7 +51,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import HistoryIcon from "@mui/icons-material/History"; // Ikona historii
+import HistoryIcon from "@mui/icons-material/History";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -105,7 +105,6 @@ export const StoreProvider = ({ children }) => {
     if (!res.ok) throw new Error(data.message);
   };
 
-  // --- NOWOŚĆ: Składanie zamówienia ---
   const placeOrder = async () => {
     if (!user || cart.length === 0) return;
     const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
@@ -122,7 +121,6 @@ export const StoreProvider = ({ children }) => {
       });
 
       if (res.ok) {
-        // Czyścimy koszyk lokalnie i w state (backend wyczyścił u siebie)
         setCart([]);
         const updatedUser = { ...user, cart: [] };
         localStorage.setItem("user", JSON.stringify(updatedUser));
@@ -182,7 +180,6 @@ export const StoreProvider = ({ children }) => {
   );
 };
 
-// --- HERO & HOME (Bez zmian) ---
 const Hero = () => (
   <Box
     sx={{
@@ -210,7 +207,7 @@ const Hero = () => (
           letterSpacing: -1,
         }}
       >
-        Styl & Technologia
+        WSZYSTKO W JEDNYM MIEJSCU
       </Typography>
       <Button
         variant="outlined"
@@ -613,7 +610,6 @@ const ProductDetails = () => {
   );
 };
 
-// --- NOWOŚĆ: STRONA MOJE ZAMÓWIENIA ---
 const OrdersPage = () => {
   const { user } = useContext(StoreContext);
   const [orders, setOrders] = useState([]);
@@ -701,7 +697,6 @@ const OrdersPage = () => {
   );
 };
 
-// --- CART (Zaktualizowany o placeOrder) ---
 const Cart = () => {
   const { cart, removeFromCart, user, placeOrder } = useContext(StoreContext);
   const nav = useNavigate();
@@ -712,7 +707,7 @@ const Cart = () => {
     const success = await placeOrder();
     if (success) {
       alert("Zamówienie przyjęte!");
-      nav("/orders"); // Przekierowanie do historii!
+      nav("/orders"); 
     } else {
       alert("Błąd składania zamówienia.");
     }
@@ -994,7 +989,7 @@ const Footer = () => {
               ALL IN STORE
             </Typography>
             <Typography variant="body2" sx={{ color: "#888", mb: 2 }}>
-              Twój sklep z najnowszą technologią. Łączymy styl z
+              Twój sklep z wszystkimi nowościami. Łączymy styl z
               funkcjonalnością, dostarczając produkty najwyższej jakości.
             </Typography>
             <Stack direction="row" spacing={2}>
@@ -1106,7 +1101,7 @@ const Footer = () => {
               Email: sklep@allinstore.com
             </Typography>
             <Typography variant="body2" sx={{ color: "#aaa" }}>
-              ul. Technologiczna 1, 00-001 Warszawa
+              ul. Sklepowa 1, 00-001 Warszawa
             </Typography>
           </Grid>
         </Grid>
@@ -1115,8 +1110,7 @@ const Footer = () => {
           variant="caption"
           sx={{ color: "#555", textAlign: "center", display: "block" }}
         >
-          © 2026 ALL IN STORE. Wszelkie prawa zastrzeżone. Projekt na
-          zaliczenie.
+          © 2026 ALL IN STORE. Wszelkie prawa zastrzeżone. 
         </Typography>
       </Container>
     </Box>
