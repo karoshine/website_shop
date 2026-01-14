@@ -1134,7 +1134,7 @@ export default function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/shipping" element={<ShippingPage />} />
               <Route path="/orders" element={<OrdersPage />} />{" "}
-              {/* Nowa trasa */}
+              {/* Nowy */}
             </Routes>
           </Box>
           <Footer />
