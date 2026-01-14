@@ -52,8 +52,6 @@ System posiada automatyczne przydzielanie uprawnień na podstawie loginu. Aby pr
 
 ## 🌟 Zaimplementowane Funkcjonalności
 
-Projekt realizuje wymagania na ocenę bardzo dobrą (30 pkt), w tym:
-
 ### 1. Backend & Baza Danych
 * **REST API:** Pełna obsługa produktów, koszyka, użytkowników i zamówień.
 * **Persystencja Danych:** Wszystkie dane (użytkownicy, opinie, zamówienia) są trwale zapisywane w pliku `db.json`.
