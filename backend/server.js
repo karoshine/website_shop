@@ -11,7 +11,6 @@ const ACCESS_SECRET = "access_key_123";
 const REFRESH_SECRET = "refresh_key_456";
 const DB_FILE = "./db.json";
 
-// --- BAZA DANYCH (Teraz obsługuje też orders) ---
 const readDB = () => {
   try {
     if (!fs.existsSync(DB_FILE)) {
@@ -22,7 +21,7 @@ const readDB = () => {
     const db = JSON.parse(fs.readFileSync(DB_FILE, "utf8"));
     if (!db.users) db.users = [];
     if (!db.reviews) db.reviews = [];
-    if (!db.orders) db.orders = []; // NOWOŚĆ
+    if (!db.orders) db.orders = []; 
     return db;
   } catch (e) {
     return { users: [], reviews: [], orders: [] };
@@ -37,7 +36,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// --- AUTH ---
 app.post("/api/register", (req, res) => {
   const { username, password } = req.body;
   let db = readDB();
@@ -87,7 +85,6 @@ app.post("/api/refresh", (req, res) => {
   });
 });
 
-// --- KOSZYK ---
 app.post("/api/cart", (req, res) => {
   const { username, cart } = req.body;
   let db = readDB();
@@ -101,12 +98,10 @@ app.post("/api/cart", (req, res) => {
   }
 });
 
-// --- ZAMÓWIENIA (NOWOŚĆ - SPEŁNIA WYMÓG HISTORII) ---
 app.post("/api/orders", (req, res) => {
   const { username, items, total } = req.body;
   let db = readDB();
 
-  // 1. Zapisz zamówienie
   const newOrder = {
     id: Date.now(),
     date: new Date().toISOString(),
@@ -116,7 +111,6 @@ app.post("/api/orders", (req, res) => {
   };
   db.orders.push(newOrder);
 
-  // 2. Wyczyść koszyk użytkownika (bo już kupił)
   const userIdx = db.users.findIndex((u) => u.username === username);
   if (userIdx !== -1) {
     db.users[userIdx].cart = [];
@@ -134,7 +128,6 @@ app.get("/api/orders/:username", (req, res) => {
   res.json(userOrders);
 });
 
-// --- OPINIE ---
 app.get("/api/reviews", (req, res) => res.json(readDB().reviews));
 
 app.post("/api/reviews", (req, res) => {
