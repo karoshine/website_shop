@@ -95,7 +95,7 @@ W folderze głównym projektu znajduje się plik `AllInStore_FINAL.postman_colle
 
 ---
 
-## 👥 Autorzy
+## 👥 Autor
 
 Projekt wykonany przez:
 Karoline Marmola
