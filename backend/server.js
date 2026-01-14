@@ -27,7 +27,6 @@ const readDB = () => {
     return { users: [], reviews: [], orders: [] };
   }
 };
-
 const writeDB = (data) =>
   fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
 
