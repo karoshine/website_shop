@@ -20,9 +20,8 @@ body {
   padding-right: 24px !important;
 }
 
-/* KARTA PRODUKTU - RÓWNE WYSOKOŚCI */
 .minimal-card {
-  height: 100% !important; /* Klucz do równych wysokości */
+  height: 100% !important; 
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
@@ -38,7 +37,6 @@ body {
   border-color: #000 !important;
 }
 
-/* KONTENER NA ZDJĘCIE - Stała wysokość */
 .img-container {
   height: 250px;
   width: 100%;
@@ -61,7 +59,6 @@ body {
   transform: scale(1.05);
 }
 
-/* PRZYCISKI */
 .btn-black {
   background-color: #000 !important;
   color: #fff !important;
@@ -74,7 +71,6 @@ body {
   background-color: #333 !important;
 }
 
-/* NAVBAR */
 .navbar-clean {
   background: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(10px);
