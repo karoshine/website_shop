@@ -40,8 +40,7 @@ npm run dev
 
 ---
 
-## 🔑 Dostęp Administratora (Wymagane do oceny)
-
+## 🔑 Dostęp Administratora 
 System posiada automatyczne przydzielanie uprawnień na podstawie loginu. Aby przetestować funkcje administratora (np. usuwanie dowolnych opinii):
 
 1. Wejdź w zakładkę **Rejestracja**.
