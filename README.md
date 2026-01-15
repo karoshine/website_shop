@@ -1,12 +1,6 @@
 # 🛒 ALL IN STORE 
 
-Kompletna platforma e-commerce zrealizowana w architekturze Client-Server. Projekt spełnia wszystkie wymagania zaliczeniowe, w tym autoryzację JWT z Refresh Tokenem, system ról (Admin/User), pełną historię zamówień oraz persystencję danych w pliku JSON.
-
-![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)
-![Node.js](https://img.shields.io/badge/Node.js-Express-green?style=for-the-badge&logo=nodedotjs)
-![MUI](https://img.shields.io/badge/MUI-Material--UI-007FFF?style=for-the-badge&logo=mui)
-![Vite](https://img.shields.io/badge/Vite-Bundler-646CFF?style=for-the-badge&logo=vite)
-
+Kompletna strona zrealizowana w architekturze Client-Server. Projekt spełnia wymagania zaliczeniowe, w tym autoryzację JWT z Refresh Tokenem, system ról (Admin/User), pełną historię zamówień oraz persystencję danych w pliku JSON.
 ---
 
 ## 🚀 Instrukcja Uruchomienia
